@@ -1,0 +1,72 @@
+
+
+[1;37;40mCode Coverage Report:      [0m
+[1;37;40m  2024-08-16 23:18:55      [0m
+[1;37;40m                           [0m
+[1;37;40m Summary:                  [0m
+[37;41m  Classes: 14.00% (7/50)   [0m
+[37;41m  Methods: 34.59% (55/159) [0m
+[37;41m  Lines:   48.22% (461/956)[0m
+
+App\DomainData\ChargeTypeDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;42mLines:  91.67% ( 11/ 12)[0m
+App\DomainData\CustomerDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;43mLines:  63.64% (  7/ 11)[0m
+App\DomainData\MealDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;42mLines:  92.31% ( 12/ 13)[0m
+App\DomainData\OrderDetailDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;43mLines:  81.82% ( 18/ 22)[0m
+App\DomainData\OrderDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;42mLines:  95.45% ( 21/ 22)[0m
+App\DomainData\ReservationDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;42mLines:  94.12% ( 16/ 17)[0m
+App\DomainData\TableDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;43mLines:  63.64% (  7/ 11)[0m
+App\DomainData\UserDto
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;43mLines:  69.23% (  9/ 13)[0m
+App\Http\Controllers\ChargeTypeController
+  [37;41mMethods:  33.33% ( 2/ 6)[0m   [30;43mLines:  83.33% ( 40/ 48)[0m
+App\Http\Controllers\Controller
+  [37;41mMethods:   0.00% ( 0/ 1)[0m   [30;43mLines:  59.46% ( 22/ 37)[0m
+App\Http\Controllers\MealController
+  [37;41mMethods:  33.33% ( 2/ 6)[0m   [30;43mLines:  83.33% ( 40/ 48)[0m
+App\Http\Controllers\OrderController
+  [37;41mMethods:  25.00% ( 2/ 8)[0m   [37;41mLines:  23.68% ( 18/ 76)[0m
+App\Http\Controllers\ReservationController
+  [37;41mMethods:  28.57% ( 2/ 7)[0m   [30;43mLines:  69.64% ( 39/ 56)[0m
+App\Http\Middleware\AdminMiddleware
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;43mLines:  66.67% (  4/  6)[0m
+App\Http\Middleware\WaiterMiddleware
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [30;43mLines:  66.67% (  4/  6)[0m
+App\Models\Meal
+  [30;42mMethods: 100.00% ( 1/ 1)[0m   [30;42mLines: 100.00% (  1/  1)[0m
+App\Models\Order
+  [30;43mMethods:  83.33% ( 5/ 6)[0m   [30;43mLines:  83.33% (  5/  6)[0m
+App\Models\Reservation
+  [37;41mMethods:  33.33% ( 1/ 3)[0m   [37;41mLines:  33.33% (  1/  3)[0m
+App\Models\Table
+  [37;41mMethods:  50.00% ( 1/ 2)[0m   [37;41mLines:  50.00% (  1/  2)[0m
+App\Models\User
+  [30;43mMethods:  75.00% ( 3/ 4)[0m   [30;43mLines:  85.71% (  6/  7)[0m
+App\Providers\AppServiceProvider
+  [30;42mMethods: 100.00% ( 2/ 2)[0m   [30;42mLines: 100.00% (  2/  2)[0m
+App\Repositories\MealRepository
+  [30;42mMethods: 100.00% ( 1/ 1)[0m   [30;42mLines: 100.00% (  5/  5)[0m
+App\Repositories\Repository
+  [30;43mMethods:  52.63% (10/19)[0m   [37;41mLines:  36.59% ( 15/ 41)[0m
+App\Repositories\ReservationRepository
+  [30;42mMethods: 100.00% ( 1/ 1)[0m   [30;42mLines: 100.00% (  4/  4)[0m
+App\Repositories\TableRepository
+  [30;42mMethods: 100.00% ( 1/ 1)[0m   [30;42mLines: 100.00% (  6/  6)[0m
+App\Services\ChargeTypeService
+  [30;42mMethods: 100.00% ( 1/ 1)[0m   [30;42mLines: 100.00% (  1/  1)[0m
+App\Services\CrudService
+  [37;41mMethods:  42.86% ( 3/ 7)[0m   [30;43mLines:  51.85% ( 14/ 27)[0m
+App\Services\MealService
+  [30;42mMethods: 100.00% ( 1/ 1)[0m   [30;42mLines: 100.00% (  1/  1)[0m
+App\Services\OrderService
+  [37;41mMethods:  50.00% ( 4/ 8)[0m   [30;43mLines:  82.93% (102/123)[0m
+App\Services\ReservationService
+  [37;41mMethods:  25.00% ( 1/ 4)[0m   [30;43mLines:  64.10% ( 25/ 39)[0m
+App\Traits\Validators
+  [37;41mMethods:  33.33% ( 1/ 3)[0m   [37;41mLines:  22.22% (  4/ 18)[0m

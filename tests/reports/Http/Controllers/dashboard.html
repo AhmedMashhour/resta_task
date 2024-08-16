@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\resta_task\app\Http\Controllers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=11.0.5" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=11.0.5" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=11.0.5" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">D:\resta_task\app</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Http</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Controllers</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CustomerController.php.html#11">App\Http\Controllers\CustomerController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderDetailController.php.html#8">App\Http\Controllers\OrderDetailController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TableController.php.html#11">App\Http\Controllers\TableController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#10">App\Http\Controllers\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WaitingListController.php.html#11">App\Http\Controllers\WaitingListController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderController.php.html#13">App\Http\Controllers\OrderController</a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="Controller.php.html#12">App\Http\Controllers\Controller</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="ReservationController.php.html#12">App\Http\Controllers\ReservationController</a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#12">App\Http\Controllers\ChargeTypeController</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="MealController.php.html#11">App\Http\Controllers\MealController</a></td><td class="text-right">83%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CustomerController.php.html#11">App\Http\Controllers\CustomerController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="WaitingListController.php.html#11">App\Http\Controllers\WaitingListController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="OrderController.php.html#13">App\Http\Controllers\OrderController</a></td><td class="text-right">162</td></tr>
+       <tr><td><a href="ReservationController.php.html#12">App\Http\Controllers\ReservationController</a></td><td class="text-right">23</td></tr>
+       <tr><td><a href="TableController.php.html#11">App\Http\Controllers\TableController</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controller.php.html#12">App\Http\Controllers\Controller</a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#12">App\Http\Controllers\ChargeTypeController</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="MealController.php.html#11">App\Http\Controllers\MealController</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="UserController.php.html#10">App\Http\Controllers\UserController</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CustomerController.php.html#15"><abbr title="App\Http\Controllers\CustomerController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomerController.php.html#19"><abbr title="App\Http\Controllers\CustomerController::getCustomers">getCustomers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomerController.php.html#46"><abbr title="App\Http\Controllers\CustomerController::createCustomer">createCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomerController.php.html#66"><abbr title="App\Http\Controllers\CustomerController::updateCustomer">updateCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomerController.php.html#87"><abbr title="App\Http\Controllers\CustomerController::deleteCustomers">deleteCustomers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomerController.php.html#108"><abbr title="App\Http\Controllers\CustomerController::getCustomerById">getCustomerById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderController.php.html#21"><abbr title="App\Http\Controllers\OrderController::getOrders">getOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderController.php.html#92"><abbr title="App\Http\Controllers\OrderController::removeItemsFromOrder">removeItemsFromOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderController.php.html#111"><abbr title="App\Http\Controllers\OrderController::addMealsToOrder">addMealsToOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderController.php.html#134"><abbr title="App\Http\Controllers\OrderController::deleteOrders">deleteOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderController.php.html#155"><abbr title="App\Http\Controllers\OrderController::getOrderById">getOrderById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderDetailController.php.html#12"><abbr title="App\Http\Controllers\OrderDetailController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ReservationController.php.html#101"><abbr title="App\Http\Controllers\ReservationController::deleteReservations">deleteReservations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TableController.php.html#19"><abbr title="App\Http\Controllers\TableController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TableController.php.html#23"><abbr title="App\Http\Controllers\TableController::getTablesAvailableForReservation">getTablesAvailableForReservation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#14"><abbr title="App\Http\Controllers\UserController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserController.php.html#18"><abbr title="App\Http\Controllers\UserController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WaitingListController.php.html#15"><abbr title="App\Http\Controllers\WaitingListController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WaitingListController.php.html#19"><abbr title="App\Http\Controllers\WaitingListController::getWaitingLists">getWaitingLists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WaitingListController.php.html#46"><abbr title="App\Http\Controllers\WaitingListController::createWaitingList">createWaitingList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WaitingListController.php.html#66"><abbr title="App\Http\Controllers\WaitingListController::updateWaitingList">updateWaitingList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WaitingListController.php.html#87"><abbr title="App\Http\Controllers\WaitingListController::deleteWaitingLists">deleteWaitingLists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WaitingListController.php.html#108"><abbr title="App\Http\Controllers\WaitingListController::getWaitingListById">getWaitingListById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller.php.html#14"><abbr title="App\Http\Controllers\Controller::InternalDispatcher">InternalDispatcher</abbr></a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="ReservationController.php.html#61"><abbr title="App\Http\Controllers\ReservationController::checkInReservation">checkInReservation</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="ReservationController.php.html#78"><abbr title="App\Http\Controllers\ReservationController::checkOutReservation">checkOutReservation</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#65"><abbr title="App\Http\Controllers\ChargeTypeController::updateChargeType">updateChargeType</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="MealController.php.html#64"><abbr title="App\Http\Controllers\MealController::updateMeal">updateMeal</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#86"><abbr title="App\Http\Controllers\ChargeTypeController::deleteChargeTypes">deleteChargeTypes</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="MealController.php.html#85"><abbr title="App\Http\Controllers\MealController::deleteMeals">deleteMeals</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="OrderController.php.html#71"><abbr title="App\Http\Controllers\OrderController::updateOrderStatus">updateOrderStatus</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#20"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypes">getChargeTypes</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="MealController.php.html#19"><abbr title="App\Http\Controllers\MealController::getMeals">getMeals</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="ReservationController.php.html#20"><abbr title="App\Http\Controllers\ReservationController::getReservations">getReservations</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#107"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypeById">getChargeTypeById</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="MealController.php.html#106"><abbr title="App\Http\Controllers\MealController::getMealById">getMealById</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="ReservationController.php.html#122"><abbr title="App\Http\Controllers\ReservationController::getReservationById">getReservationById</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CustomerController.php.html#108"><abbr title="App\Http\Controllers\CustomerController::getCustomerById">getCustomerById</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="OrderController.php.html#155"><abbr title="App\Http\Controllers\OrderController::getOrderById">getOrderById</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="WaitingListController.php.html#108"><abbr title="App\Http\Controllers\WaitingListController::getWaitingListById">getWaitingListById</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controller.php.html#14"><abbr title="App\Http\Controllers\Controller::InternalDispatcher">InternalDispatcher</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="CustomerController.php.html#19"><abbr title="App\Http\Controllers\CustomerController::getCustomers">getCustomers</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="OrderController.php.html#21"><abbr title="App\Http\Controllers\OrderController::getOrders">getOrders</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="TableController.php.html#23"><abbr title="App\Http\Controllers\TableController::getTablesAvailableForReservation">getTablesAvailableForReservation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="WaitingListController.php.html#19"><abbr title="App\Http\Controllers\WaitingListController::getWaitingLists">getWaitingLists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CustomerController.php.html#46"><abbr title="App\Http\Controllers\CustomerController::createCustomer">createCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CustomerController.php.html#66"><abbr title="App\Http\Controllers\CustomerController::updateCustomer">updateCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CustomerController.php.html#87"><abbr title="App\Http\Controllers\CustomerController::deleteCustomers">deleteCustomers</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="OrderController.php.html#92"><abbr title="App\Http\Controllers\OrderController::removeItemsFromOrder">removeItemsFromOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="OrderController.php.html#111"><abbr title="App\Http\Controllers\OrderController::addMealsToOrder">addMealsToOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="OrderController.php.html#134"><abbr title="App\Http\Controllers\OrderController::deleteOrders">deleteOrders</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ReservationController.php.html#101"><abbr title="App\Http\Controllers\ReservationController::deleteReservations">deleteReservations</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserController.php.html#18"><abbr title="App\Http\Controllers\UserController::login">login</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="WaitingListController.php.html#46"><abbr title="App\Http\Controllers\WaitingListController::createWaitingList">createWaitingList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="WaitingListController.php.html#66"><abbr title="App\Http\Controllers\WaitingListController::updateWaitingList">updateWaitingList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="WaitingListController.php.html#87"><abbr title="App\Http\Controllers\WaitingListController::deleteWaitingLists">deleteWaitingLists</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#107"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypeById">getChargeTypeById</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="MealController.php.html#106"><abbr title="App\Http\Controllers\MealController::getMealById">getMealById</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="ReservationController.php.html#122"><abbr title="App\Http\Controllers\ReservationController::getReservationById">getReservationById</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#20"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypes">getChargeTypes</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="MealController.php.html#19"><abbr title="App\Http\Controllers\MealController::getMeals">getMeals</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="ReservationController.php.html#20"><abbr title="App\Http\Controllers\ReservationController::getReservations">getReservations</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="ReservationController.php.html#61"><abbr title="App\Http\Controllers\ReservationController::checkInReservation">checkInReservation</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ReservationController.php.html#78"><abbr title="App\Http\Controllers\ReservationController::checkOutReservation">checkOutReservation</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#65"><abbr title="App\Http\Controllers\ChargeTypeController::updateChargeType">updateChargeType</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="MealController.php.html#64"><abbr title="App\Http\Controllers\MealController::updateMeal">updateMeal</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ChargeTypeController.php.html#86"><abbr title="App\Http\Controllers\ChargeTypeController::deleteChargeTypes">deleteChargeTypes</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="MealController.php.html#85"><abbr title="App\Http\Controllers\MealController::deleteMeals">deleteMeals</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="OrderController.php.html#71"><abbr title="App\Http\Controllers\OrderController::updateOrderStatus">updateOrderStatus</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.5</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.14</a> and <a href="https://phpunit.de/">PHPUnit 11.3.1</a> at Fri Aug 16 23:18:54 UTC 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=11.0.5" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=11.0.5" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=11.0.5" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([5,0,0,1,0,0,1,1,0,2,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([23,0,0,0,0,0,1,0,7,6,0,8], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[83.33333333333334,14,"<a href=\"ChargeTypeController.php.html#12\">App\\Http\\Controllers\\ChargeTypeController<\/a>"],[59.45945945945946,10,"<a href=\"Controller.php.html#12\">App\\Http\\Controllers\\Controller<\/a>"],[0,14,"<a href=\"CustomerController.php.html#11\">App\\Http\\Controllers\\CustomerController<\/a>"],[83.33333333333334,14,"<a href=\"MealController.php.html#11\">App\\Http\\Controllers\\MealController<\/a>"],[23.684210526315788,18,"<a href=\"OrderController.php.html#13\">App\\Http\\Controllers\\OrderController<\/a>"],[0,1,"<a href=\"OrderDetailController.php.html#8\">App\\Http\\Controllers\\OrderDetailController<\/a>"],[69.64285714285714,16,"<a href=\"ReservationController.php.html#12\">App\\Http\\Controllers\\ReservationController<\/a>"],[0,4,"<a href=\"TableController.php.html#11\">App\\Http\\Controllers\\TableController<\/a>"],[0,3,"<a href=\"UserController.php.html#10\">App\\Http\\Controllers\\UserController<\/a>"],[0,14,"<a href=\"WaitingListController.php.html#11\">App\\Http\\Controllers\\WaitingListController<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"ChargeTypeController.php.html#16\">App\\Http\\Controllers\\ChargeTypeController::__construct<\/a>"],[81.81818181818183,3,"<a href=\"ChargeTypeController.php.html#20\">App\\Http\\Controllers\\ChargeTypeController::getChargeTypes<\/a>"],[100,2,"<a href=\"ChargeTypeController.php.html#45\">App\\Http\\Controllers\\ChargeTypeController::createChargeType<\/a>"],[75,2,"<a href=\"ChargeTypeController.php.html#65\">App\\Http\\Controllers\\ChargeTypeController::updateChargeType<\/a>"],[77.77777777777779,2,"<a href=\"ChargeTypeController.php.html#86\">App\\Http\\Controllers\\ChargeTypeController::deleteChargeTypes<\/a>"],[83.33333333333334,4,"<a href=\"ChargeTypeController.php.html#107\">App\\Http\\Controllers\\ChargeTypeController::getChargeTypeById<\/a>"],[59.45945945945946,10,"<a href=\"Controller.php.html#14\">App\\Http\\Controllers\\Controller::InternalDispatcher<\/a>"],[0,1,"<a href=\"CustomerController.php.html#15\">App\\Http\\Controllers\\CustomerController::__construct<\/a>"],[0,3,"<a href=\"CustomerController.php.html#19\">App\\Http\\Controllers\\CustomerController::getCustomers<\/a>"],[0,2,"<a href=\"CustomerController.php.html#46\">App\\Http\\Controllers\\CustomerController::createCustomer<\/a>"],[0,2,"<a href=\"CustomerController.php.html#66\">App\\Http\\Controllers\\CustomerController::updateCustomer<\/a>"],[0,2,"<a href=\"CustomerController.php.html#87\">App\\Http\\Controllers\\CustomerController::deleteCustomers<\/a>"],[0,4,"<a href=\"CustomerController.php.html#108\">App\\Http\\Controllers\\CustomerController::getCustomerById<\/a>"],[100,1,"<a href=\"MealController.php.html#15\">App\\Http\\Controllers\\MealController::__construct<\/a>"],[81.81818181818183,3,"<a href=\"MealController.php.html#19\">App\\Http\\Controllers\\MealController::getMeals<\/a>"],[100,2,"<a href=\"MealController.php.html#44\">App\\Http\\Controllers\\MealController::createMeal<\/a>"],[75,2,"<a href=\"MealController.php.html#64\">App\\Http\\Controllers\\MealController::updateMeal<\/a>"],[77.77777777777779,2,"<a href=\"MealController.php.html#85\">App\\Http\\Controllers\\MealController::deleteMeals<\/a>"],[83.33333333333334,4,"<a href=\"MealController.php.html#106\">App\\Http\\Controllers\\MealController::getMealById<\/a>"],[100,1,"<a href=\"OrderController.php.html#17\">App\\Http\\Controllers\\OrderController::__construct<\/a>"],[0,3,"<a href=\"OrderController.php.html#21\">App\\Http\\Controllers\\OrderController::getOrders<\/a>"],[100,2,"<a href=\"OrderController.php.html#48\">App\\Http\\Controllers\\OrderController::createOrder<\/a>"],[77.77777777777779,2,"<a href=\"OrderController.php.html#71\">App\\Http\\Controllers\\OrderController::updateOrderStatus<\/a>"],[0,2,"<a href=\"OrderController.php.html#92\">App\\Http\\Controllers\\OrderController::removeItemsFromOrder<\/a>"],[0,2,"<a href=\"OrderController.php.html#111\">App\\Http\\Controllers\\OrderController::addMealsToOrder<\/a>"],[0,2,"<a href=\"OrderController.php.html#134\">App\\Http\\Controllers\\OrderController::deleteOrders<\/a>"],[0,4,"<a href=\"OrderController.php.html#155\">App\\Http\\Controllers\\OrderController::getOrderById<\/a>"],[0,1,"<a href=\"OrderDetailController.php.html#12\">App\\Http\\Controllers\\OrderDetailController::__construct<\/a>"],[100,1,"<a href=\"ReservationController.php.html#16\">App\\Http\\Controllers\\ReservationController::__construct<\/a>"],[81.81818181818183,3,"<a href=\"ReservationController.php.html#20\">App\\Http\\Controllers\\ReservationController::getReservations<\/a>"],[100,2,"<a href=\"ReservationController.php.html#45\">App\\Http\\Controllers\\ReservationController::createReservation<\/a>"],[71.42857142857143,2,"<a href=\"ReservationController.php.html#61\">App\\Http\\Controllers\\ReservationController::checkInReservation<\/a>"],[71.42857142857143,2,"<a href=\"ReservationController.php.html#78\">App\\Http\\Controllers\\ReservationController::checkOutReservation<\/a>"],[0,2,"<a href=\"ReservationController.php.html#101\">App\\Http\\Controllers\\ReservationController::deleteReservations<\/a>"],[85.71428571428571,4,"<a href=\"ReservationController.php.html#122\">App\\Http\\Controllers\\ReservationController::getReservationById<\/a>"],[0,1,"<a href=\"TableController.php.html#19\">App\\Http\\Controllers\\TableController::__construct<\/a>"],[0,3,"<a href=\"TableController.php.html#23\">App\\Http\\Controllers\\TableController::getTablesAvailableForReservation<\/a>"],[0,1,"<a href=\"UserController.php.html#14\">App\\Http\\Controllers\\UserController::__construct<\/a>"],[0,2,"<a href=\"UserController.php.html#18\">App\\Http\\Controllers\\UserController::login<\/a>"],[0,1,"<a href=\"WaitingListController.php.html#15\">App\\Http\\Controllers\\WaitingListController::__construct<\/a>"],[0,3,"<a href=\"WaitingListController.php.html#19\">App\\Http\\Controllers\\WaitingListController::getWaitingLists<\/a>"],[0,2,"<a href=\"WaitingListController.php.html#46\">App\\Http\\Controllers\\WaitingListController::createWaitingList<\/a>"],[0,2,"<a href=\"WaitingListController.php.html#66\">App\\Http\\Controllers\\WaitingListController::updateWaitingList<\/a>"],[0,2,"<a href=\"WaitingListController.php.html#87\">App\\Http\\Controllers\\WaitingListController::deleteWaitingLists<\/a>"],[0,4,"<a href=\"WaitingListController.php.html#108\">App\\Http\\Controllers\\WaitingListController::getWaitingListById<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

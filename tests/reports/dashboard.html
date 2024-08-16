@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\resta_task\app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=11.0.5" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=11.0.5" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=11.0.5" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">D:\resta_task\app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#11">App\Http\Controllers\CustomerController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderDetailController.php.html#8">App\Http\Controllers\OrderDetailController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TableController.php.html#11">App\Http\Controllers\TableController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#10">App\Http\Controllers\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#11">App\Http\Controllers\WaitingListController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ChargeType.php.html#10">App\Models\ChargeType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Customer.php.html#10">App\Models\Customer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/OrderDetail.php.html#10">App\Models\OrderDetail</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/WaitingList.php.html#9">App\Models\WaitingList</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/CustomerService.php.html#5">App\Services\CustomerService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OrderDetailService.php.html#5">App\Services\OrderDetailService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/TableService.php.html#7">App\Services\TableService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#8">App\Services\UserService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/WaitingListService.php.html#5">App\Services\WaitingListService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DomainData/WaitingListDto.php.html#5">App\DomainData\WaitingListDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/GenerateRandomString.php.html#12">App\Traits\GenerateRandomString</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/Notifications.php.html#17">App\Traits\Notifications</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#12">App\Traits\SendApis</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/UploadFile.php.html#10">App\Traits\UploadFile</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/Validators.php.html#5">App\Traits\Validators</a></td><td class="text-right">22%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#13">App\Http\Controllers\OrderController</a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="Models/Reservation.php.html#10">App\Models\Reservation</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#6">App\Repositories\Repository</a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="Models/Table.php.html#10">App\Models\Table</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#10">App\Services\CrudService</a></td><td class="text-right">51%</td></tr>
+       <tr><td><a href="Http/Controllers/Controller.php.html#12">App\Http\Controllers\Controller</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="DomainData/CustomerDto.php.html#5">App\DomainData\CustomerDto</a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="DomainData/TableDto.php.html#5">App\DomainData\TableDto</a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#9">App\Services\ReservationService</a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#10">App\Http\Middleware\AdminMiddleware</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Middleware/WaiterMiddleware.php.html#10">App\Http\Middleware\WaiterMiddleware</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="DomainData/UserDto.php.html#5">App\DomainData\UserDto</a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#12">App\Http\Controllers\ReservationController</a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="DomainData/OrderDetailDto.php.html#5">App\DomainData\OrderDetailDto</a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#12">App\Services\OrderService</a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#12">App\Http\Controllers\ChargeTypeController</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#11">App\Http\Controllers\MealController</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Models/Order.php.html#10">App\Models\Order</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Models/User.php.html#13">App\Models\User</a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#11">App\Http\Controllers\CustomerController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#11">App\Http\Controllers\WaitingListController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#6">App\Repositories\Repository</a></td><td class="text-right">198</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#13">App\Http\Controllers\OrderController</a></td><td class="text-right">162</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#12">App\Traits\SendApis</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Traits/Validators.php.html#5">App\Traits\Validators</a></td><td class="text-right">47</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#10">App\Services\CrudService</a></td><td class="text-right">31</td></tr>
+       <tr><td><a href="DomainData/WaitingListDto.php.html#5">App\DomainData\WaitingListDto</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Traits/GenerateRandomString.php.html#12">App\Traits\GenerateRandomString</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#12">App\Services\OrderService</a></td><td class="text-right">23</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#12">App\Http\Controllers\ReservationController</a></td><td class="text-right">23</td></tr>
+       <tr><td><a href="Http/Controllers/TableController.php.html#11">App\Http\Controllers\TableController</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Services/UserService.php.html#8">App\Services\UserService</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Traits/Notifications.php.html#17">App\Traits\Notifications</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/Controller.php.html#12">App\Http\Controllers\Controller</a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#9">App\Services\ReservationService</a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#12">App\Http\Controllers\ChargeTypeController</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#11">App\Http\Controllers\MealController</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#10">App\Http\Controllers\UserController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="DomainData/CustomerDto.php.html#5">App\DomainData\CustomerDto</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DomainData/TableDto.php.html#5">App\DomainData\TableDto</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DomainData/UserDto.php.html#5">App\DomainData\UserDto</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="DomainData/OrderDetailDto.php.html#5">App\DomainData\OrderDetailDto</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#10">App\Http\Middleware\AdminMiddleware</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/WaiterMiddleware.php.html#10">App\Http\Middleware\WaiterMiddleware</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#15"><abbr title="App\Http\Controllers\CustomerController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#19"><abbr title="App\Http\Controllers\CustomerController::getCustomers">getCustomers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#46"><abbr title="App\Http\Controllers\CustomerController::createCustomer">createCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#66"><abbr title="App\Http\Controllers\CustomerController::updateCustomer">updateCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#87"><abbr title="App\Http\Controllers\CustomerController::deleteCustomers">deleteCustomers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#108"><abbr title="App\Http\Controllers\CustomerController::getCustomerById">getCustomerById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#21"><abbr title="App\Http\Controllers\OrderController::getOrders">getOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#92"><abbr title="App\Http\Controllers\OrderController::removeItemsFromOrder">removeItemsFromOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#111"><abbr title="App\Http\Controllers\OrderController::addMealsToOrder">addMealsToOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#134"><abbr title="App\Http\Controllers\OrderController::deleteOrders">deleteOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#155"><abbr title="App\Http\Controllers\OrderController::getOrderById">getOrderById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderDetailController.php.html#12"><abbr title="App\Http\Controllers\OrderDetailController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#101"><abbr title="App\Http\Controllers\ReservationController::deleteReservations">deleteReservations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TableController.php.html#19"><abbr title="App\Http\Controllers\TableController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TableController.php.html#23"><abbr title="App\Http\Controllers\TableController::getTablesAvailableForReservation">getTablesAvailableForReservation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#14"><abbr title="App\Http\Controllers\UserController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#18"><abbr title="App\Http\Controllers\UserController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#15"><abbr title="App\Http\Controllers\WaitingListController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#19"><abbr title="App\Http\Controllers\WaitingListController::getWaitingLists">getWaitingLists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#46"><abbr title="App\Http\Controllers\WaitingListController::createWaitingList">createWaitingList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#66"><abbr title="App\Http\Controllers\WaitingListController::updateWaitingList">updateWaitingList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#87"><abbr title="App\Http\Controllers\WaitingListController::deleteWaitingLists">deleteWaitingLists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#108"><abbr title="App\Http\Controllers\WaitingListController::getWaitingListById">getWaitingListById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/ChargeType.php.html#16"><abbr title="App\Models\ChargeType::orders">orders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Customer.php.html#18"><abbr title="App\Models\Customer::orders">orders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Customer.php.html#23"><abbr title="App\Models\Customer::reservations">reservations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Order.php.html#42"><abbr title="App\Models\Order::chargeType">chargeType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/OrderDetail.php.html#20"><abbr title="App\Models\OrderDetail::order">order</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/OrderDetail.php.html#25"><abbr title="App\Models\OrderDetail::meal">meal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Reservation.php.html#22"><abbr title="App\Models\Reservation::customer">customer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Reservation.php.html#27"><abbr title="App\Models\Reservation::table">table</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Table.php.html#16"><abbr title="App\Models\Table::orders">orders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#63"><abbr title="App\Models\User::orders">orders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/WaitingList.php.html#15"><abbr title="App\Models\WaitingList::customer">customer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#37"><abbr title="App\Repositories\Repository::getByIdAndLock">getByIdAndLock</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#42"><abbr title="App\Repositories\Repository::getByKey">getByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#52"><abbr title="App\Repositories\Repository::multipleSort">multipleSort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#67"><abbr title="App\Repositories\Repository::updateOrCreate">updateOrCreate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#79"><abbr title="App\Repositories\Repository::insertMany">insertMany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#101"><abbr title="App\Repositories\Repository::deleteWhereNotIn">deleteWhereNotIn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#111"><abbr title="App\Repositories\Repository::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#121"><abbr title="App\Repositories\Repository::syncWithUuid">syncWithUuid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#139"><abbr title="App\Repositories\Repository::sync">sync</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#30"><abbr title="App\Services\CrudService::createMany">createMany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/CustomerService.php.html#7"><abbr title="App\Services\CustomerService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OrderDetailService.php.html#7"><abbr title="App\Services\OrderDetailService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#125"><abbr title="App\Services\OrderService::removeItemsFromOrder">removeItemsFromOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/TableService.php.html#9"><abbr title="App\Services\TableService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/TableService.php.html#14"><abbr title="App\Services\TableService::getTablesAvailableForReservation">getTablesAvailableForReservation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#10"><abbr title="App\Services\UserService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/UserService.php.html#15"><abbr title="App\Services\UserService::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/WaitingListService.php.html#7"><abbr title="App\Services\WaitingListService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DomainData/CustomerDto.php.html#7"><abbr title="App\DomainData\CustomerDto::getRules">getRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DomainData/OrderDetailDto.php.html#7"><abbr title="App\DomainData\OrderDetailDto::getRules">getRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DomainData/TableDto.php.html#7"><abbr title="App\DomainData\TableDto::getRules">getRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DomainData/UserDto.php.html#7"><abbr title="App\DomainData\UserDto::getRules">getRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DomainData/WaitingListDto.php.html#7"><abbr title="App\DomainData\WaitingListDto::getRules">getRules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DomainData/WaitingListDto.php.html#17"><abbr title="App\DomainData\WaitingListDto::initializeWaitingListDto">initializeWaitingListDto</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/GenerateRandomString.php.html#14"><abbr title="App\Traits\GenerateRandomString::generateRandomString">generateRandomString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/GenerateRandomString.php.html#24"><abbr title="App\Traits\GenerateRandomString::generateRandomDigits">generateRandomDigits</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/GenerateRandomString.php.html#34"><abbr title="App\Traits\GenerateRandomString::generateRandomDate">generateRandomDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/Notifications.php.html#19"><abbr title="App\Traits\Notifications::notify">notify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/Notifications.php.html#48"><abbr title="App\Traits\Notifications::notifyFireBase">notifyFireBase</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/Notifications.php.html#74"><abbr title="App\Traits\Notifications::pushChanel">pushChanel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#14"><abbr title="App\Traits\SendApis::getGuzzleRequest">getGuzzleRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#24"><abbr title="App\Traits\SendApis::postOutRequest">postOutRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#41"><abbr title="App\Traits\SendApis::putGuzzleRequest">putGuzzleRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#57"><abbr title="App\Traits\SendApis::deleteGuzzleRequest">deleteGuzzleRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/UploadFile.php.html#13"><abbr title="App\Traits\UploadFile::uploadFile">uploadFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/UploadFile.php.html#27"><abbr title="App\Traits\UploadFile::deleteFile">deleteFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/UploadFile.php.html#32"><abbr title="App\Traits\UploadFile::uploadBase64File">uploadBase64File</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/UploadFile.php.html#49"><abbr title="App\Traits\UploadFile::convertFileToBase64">convertFileToBase64</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/UploadFile.php.html#56"><abbr title="App\Traits\UploadFile::createBase64File">createBase64File</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/Validators.php.html#20"><abbr title="App\Traits\Validators::arrayValidator">arrayValidator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/Validators.php.html#32"><abbr title="App\Traits\Validators::objectValidator">objectValidator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#105"><abbr title="App\Services\OrderService::checkReservation">checkReservation</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#117"><abbr title="App\Services\OrderService::checkOrder">checkOrder</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#46"><abbr title="App\Services\CrudService::update">update</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#38"><abbr title="App\Services\ReservationService::checkInReservation">checkInReservation</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#62"><abbr title="App\Services\ReservationService::checkOutReservation">checkOutReservation</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Http/Controllers/Controller.php.html#14"><abbr title="App\Http\Controllers\Controller::InternalDispatcher">InternalDispatcher</abbr></a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#20"><abbr title="App\Http\Middleware\AdminMiddleware::handle">handle</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Http/Middleware/WaiterMiddleware.php.html#20"><abbr title="App\Http\Middleware\WaiterMiddleware::handle">handle</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#70"><abbr title="App\Services\CrudService::getById">getById</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#61"><abbr title="App\Http\Controllers\ReservationController::checkInReservation">checkInReservation</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#78"><abbr title="App\Http\Controllers\ReservationController::checkOutReservation">checkOutReservation</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#65"><abbr title="App\Http\Controllers\ChargeTypeController::updateChargeType">updateChargeType</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#64"><abbr title="App\Http\Controllers\MealController::updateMeal">updateMeal</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#20"><abbr title="App\Services\CrudService::create">create</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="DomainData/ChargeTypeDto.php.html#7"><abbr title="App\DomainData\ChargeTypeDto::getRules">getRules</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="DomainData/MealDto.php.html#7"><abbr title="App\DomainData\MealDto::getRules">getRules</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="DomainData/OrderDto.php.html#7"><abbr title="App\DomainData\OrderDto::getRules">getRules</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="DomainData/ReservationDto.php.html#7"><abbr title="App\DomainData\ReservationDto::getRules">getRules</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#86"><abbr title="App\Http\Controllers\ChargeTypeController::deleteChargeTypes">deleteChargeTypes</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#85"><abbr title="App\Http\Controllers\MealController::deleteMeals">deleteMeals</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#71"><abbr title="App\Http\Controllers\OrderController::updateOrderStatus">updateOrderStatus</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#22"><abbr title="App\Services\ReservationService::create">create</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#20"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypes">getChargeTypes</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#19"><abbr title="App\Http\Controllers\MealController::getMeals">getMeals</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#20"><abbr title="App\Http\Controllers\ReservationController::getReservations">getReservations</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#107"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypeById">getChargeTypeById</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#106"><abbr title="App\Http\Controllers\MealController::getMealById">getMealById</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#122"><abbr title="App\Http\Controllers\ReservationController::getReservationById">getReservationById</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#108"><abbr title="App\Http\Controllers\CustomerController::getCustomerById">getCustomerById</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#155"><abbr title="App\Http\Controllers\OrderController::getOrderById">getOrderById</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#108"><abbr title="App\Http\Controllers\WaitingListController::getWaitingListById">getWaitingListById</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#121"><abbr title="App\Repositories\Repository::syncWithUuid">syncWithUuid</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#24"><abbr title="App\Traits\SendApis::postOutRequest">postOutRequest</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Traits/Validators.php.html#32"><abbr title="App\Traits\Validators::objectValidator">objectValidator</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/Controller.php.html#14"><abbr title="App\Http\Controllers\Controller::InternalDispatcher">InternalDispatcher</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#19"><abbr title="App\Http\Controllers\CustomerController::getCustomers">getCustomers</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#21"><abbr title="App\Http\Controllers\OrderController::getOrders">getOrders</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/TableController.php.html#23"><abbr title="App\Http\Controllers\TableController::getTablesAvailableForReservation">getTablesAvailableForReservation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#19"><abbr title="App\Http\Controllers\WaitingListController::getWaitingLists">getWaitingLists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#30"><abbr title="App\Services\CrudService::createMany">createMany</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/UserService.php.html#15"><abbr title="App\Services\UserService::login">login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="DomainData/WaitingListDto.php.html#17"><abbr title="App\DomainData\WaitingListDto::initializeWaitingListDto">initializeWaitingListDto</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Traits/SendApis.php.html#41"><abbr title="App\Traits\SendApis::putGuzzleRequest">putGuzzleRequest</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Traits/Validators.php.html#20"><abbr title="App\Traits\Validators::arrayValidator">arrayValidator</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#46"><abbr title="App\Http\Controllers\CustomerController::createCustomer">createCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#66"><abbr title="App\Http\Controllers\CustomerController::updateCustomer">updateCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/CustomerController.php.html#87"><abbr title="App\Http\Controllers\CustomerController::deleteCustomers">deleteCustomers</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#92"><abbr title="App\Http\Controllers\OrderController::removeItemsFromOrder">removeItemsFromOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#111"><abbr title="App\Http\Controllers\OrderController::addMealsToOrder">addMealsToOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#134"><abbr title="App\Http\Controllers\OrderController::deleteOrders">deleteOrders</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#101"><abbr title="App\Http\Controllers\ReservationController::deleteReservations">deleteReservations</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/UserController.php.html#18"><abbr title="App\Http\Controllers\UserController::login">login</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#46"><abbr title="App\Http\Controllers\WaitingListController::createWaitingList">createWaitingList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#66"><abbr title="App\Http\Controllers\WaitingListController::updateWaitingList">updateWaitingList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/WaitingListController.php.html#87"><abbr title="App\Http\Controllers\WaitingListController::deleteWaitingLists">deleteWaitingLists</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#52"><abbr title="App\Repositories\Repository::multipleSort">multipleSort</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#67"><abbr title="App\Repositories\Repository::updateOrCreate">updateOrCreate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/Repository.php.html#111"><abbr title="App\Repositories\Repository::forceDelete">forceDelete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#125"><abbr title="App\Services\OrderService::removeItemsFromOrder">removeItemsFromOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DomainData/CustomerDto.php.html#7"><abbr title="App\DomainData\CustomerDto::getRules">getRules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DomainData/OrderDetailDto.php.html#7"><abbr title="App\DomainData\OrderDetailDto::getRules">getRules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DomainData/TableDto.php.html#7"><abbr title="App\DomainData\TableDto::getRules">getRules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DomainData/UserDto.php.html#7"><abbr title="App\DomainData\UserDto::getRules">getRules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DomainData/WaitingListDto.php.html#7"><abbr title="App\DomainData\WaitingListDto::getRules">getRules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Traits/GenerateRandomString.php.html#14"><abbr title="App\Traits\GenerateRandomString::generateRandomString">generateRandomString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Traits/GenerateRandomString.php.html#24"><abbr title="App\Traits\GenerateRandomString::generateRandomDigits">generateRandomDigits</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Traits/Notifications.php.html#48"><abbr title="App\Traits\Notifications::notifyFireBase">notifyFireBase</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#105"><abbr title="App\Services\OrderService::checkReservation">checkReservation</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#38"><abbr title="App\Services\ReservationService::checkInReservation">checkInReservation</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#62"><abbr title="App\Services\ReservationService::checkOutReservation">checkOutReservation</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#107"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypeById">getChargeTypeById</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#106"><abbr title="App\Http\Controllers\MealController::getMealById">getMealById</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#122"><abbr title="App\Http\Controllers\ReservationController::getReservationById">getReservationById</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#46"><abbr title="App\Services\CrudService::update">update</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Services/OrderService.php.html#117"><abbr title="App\Services\OrderService::checkOrder">checkOrder</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#20"><abbr title="App\Http\Controllers\ChargeTypeController::getChargeTypes">getChargeTypes</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#19"><abbr title="App\Http\Controllers\MealController::getMeals">getMeals</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#20"><abbr title="App\Http\Controllers\ReservationController::getReservations">getReservations</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#20"><abbr title="App\Http\Middleware\AdminMiddleware::handle">handle</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Middleware/WaiterMiddleware.php.html#20"><abbr title="App\Http\Middleware\WaiterMiddleware::handle">handle</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#70"><abbr title="App\Services\CrudService::getById">getById</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#61"><abbr title="App\Http\Controllers\ReservationController::checkInReservation">checkInReservation</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/ReservationController.php.html#78"><abbr title="App\Http\Controllers\ReservationController::checkOutReservation">checkOutReservation</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#65"><abbr title="App\Http\Controllers\ChargeTypeController::updateChargeType">updateChargeType</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#64"><abbr title="App\Http\Controllers\MealController::updateMeal">updateMeal</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Services/CrudService.php.html#20"><abbr title="App\Services\CrudService::create">create</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="DomainData/ChargeTypeDto.php.html#7"><abbr title="App\DomainData\ChargeTypeDto::getRules">getRules</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="DomainData/MealDto.php.html#7"><abbr title="App\DomainData\MealDto::getRules">getRules</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="DomainData/OrderDto.php.html#7"><abbr title="App\DomainData\OrderDto::getRules">getRules</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="DomainData/ReservationDto.php.html#7"><abbr title="App\DomainData\ReservationDto::getRules">getRules</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/ChargeTypeController.php.html#86"><abbr title="App\Http\Controllers\ChargeTypeController::deleteChargeTypes">deleteChargeTypes</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/MealController.php.html#85"><abbr title="App\Http\Controllers\MealController::deleteMeals">deleteMeals</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/OrderController.php.html#71"><abbr title="App\Http\Controllers\OrderController::updateOrderStatus">updateOrderStatus</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Services/ReservationService.php.html#22"><abbr title="App\Services\ReservationService::create">create</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.5</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.14</a> and <a href="https://phpunit.de/">PHPUnit 11.3.1</a> at Fri Aug 16 23:18:54 UTC 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=11.0.5" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=11.0.5" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=11.0.5" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([19,0,0,2,2,0,3,7,0,6,4,7], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([75,0,0,0,2,0,4,3,13,6,1,55], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[83.33333333333334,14,"<a href=\"Http\/Controllers\/ChargeTypeController.php.html#12\">App\\Http\\Controllers\\ChargeTypeController<\/a>"],[59.45945945945946,10,"<a href=\"Http\/Controllers\/Controller.php.html#12\">App\\Http\\Controllers\\Controller<\/a>"],[0,14,"<a href=\"Http\/Controllers\/CustomerController.php.html#11\">App\\Http\\Controllers\\CustomerController<\/a>"],[83.33333333333334,14,"<a href=\"Http\/Controllers\/MealController.php.html#11\">App\\Http\\Controllers\\MealController<\/a>"],[23.684210526315788,18,"<a href=\"Http\/Controllers\/OrderController.php.html#13\">App\\Http\\Controllers\\OrderController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/OrderDetailController.php.html#8\">App\\Http\\Controllers\\OrderDetailController<\/a>"],[69.64285714285714,16,"<a href=\"Http\/Controllers\/ReservationController.php.html#12\">App\\Http\\Controllers\\ReservationController<\/a>"],[0,4,"<a href=\"Http\/Controllers\/TableController.php.html#11\">App\\Http\\Controllers\\TableController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/UserController.php.html#10\">App\\Http\\Controllers\\UserController<\/a>"],[0,14,"<a href=\"Http\/Controllers\/WaitingListController.php.html#11\">App\\Http\\Controllers\\WaitingListController<\/a>"],[66.66666666666666,3,"<a href=\"Http\/Middleware\/AdminMiddleware.php.html#10\">App\\Http\\Middleware\\AdminMiddleware<\/a>"],[66.66666666666666,3,"<a href=\"Http\/Middleware\/WaiterMiddleware.php.html#10\">App\\Http\\Middleware\\WaiterMiddleware<\/a>"],[0,1,"<a href=\"Models\/ChargeType.php.html#10\">App\\Models\\ChargeType<\/a>"],[0,2,"<a href=\"Models\/Customer.php.html#10\">App\\Models\\Customer<\/a>"],[100,1,"<a href=\"Models\/Meal.php.html#10\">App\\Models\\Meal<\/a>"],[83.33333333333334,6,"<a href=\"Models\/Order.php.html#10\">App\\Models\\Order<\/a>"],[0,2,"<a href=\"Models\/OrderDetail.php.html#10\">App\\Models\\OrderDetail<\/a>"],[33.33333333333333,3,"<a href=\"Models\/Reservation.php.html#10\">App\\Models\\Reservation<\/a>"],[50,2,"<a href=\"Models\/Table.php.html#10\">App\\Models\\Table<\/a>"],[85.71428571428571,4,"<a href=\"Models\/User.php.html#13\">App\\Models\\User<\/a>"],[0,1,"<a href=\"Models\/WaitingList.php.html#9\">App\\Models\\WaitingList<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#7\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Repositories\/MealRepository.php.html#5\">App\\Repositories\\MealRepository<\/a>"],[36.58536585365854,26,"<a href=\"Repositories\/Repository.php.html#6\">App\\Repositories\\Repository<\/a>"],[100,1,"<a href=\"Repositories\/ReservationRepository.php.html#7\">App\\Repositories\\ReservationRepository<\/a>"],[100,1,"<a href=\"Repositories\/TableRepository.php.html#5\">App\\Repositories\\TableRepository<\/a>"],[100,1,"<a href=\"Services\/ChargeTypeService.php.html#5\">App\\Services\\ChargeTypeService<\/a>"],[51.85185185185185,13,"<a href=\"Services\/CrudService.php.html#10\">App\\Services\\CrudService<\/a>"],[0,1,"<a href=\"Services\/CustomerService.php.html#5\">App\\Services\\CustomerService<\/a>"],[100,1,"<a href=\"Services\/MealService.php.html#5\">App\\Services\\MealService<\/a>"],[0,1,"<a href=\"Services\/OrderDetailService.php.html#5\">App\\Services\\OrderDetailService<\/a>"],[82.92682926829268,21,"<a href=\"Services\/OrderService.php.html#12\">App\\Services\\OrderService<\/a>"],[64.1025641025641,11,"<a href=\"Services\/ReservationService.php.html#9\">App\\Services\\ReservationService<\/a>"],[0,2,"<a href=\"Services\/TableService.php.html#7\">App\\Services\\TableService<\/a>"],[0,4,"<a href=\"Services\/UserService.php.html#8\">App\\Services\\UserService<\/a>"],[0,1,"<a href=\"Services\/WaitingListService.php.html#5\">App\\Services\\WaitingListService<\/a>"],[91.66666666666666,5,"<a href=\"DomainData\/ChargeTypeDto.php.html#5\">App\\DomainData\\ChargeTypeDto<\/a>"],[63.63636363636363,5,"<a href=\"DomainData\/CustomerDto.php.html#5\">App\\DomainData\\CustomerDto<\/a>"],[92.3076923076923,5,"<a href=\"DomainData\/MealDto.php.html#5\">App\\DomainData\\MealDto<\/a>"],[81.81818181818183,5,"<a href=\"DomainData\/OrderDetailDto.php.html#5\">App\\DomainData\\OrderDetailDto<\/a>"],[95.45454545454545,5,"<a href=\"DomainData\/OrderDto.php.html#5\">App\\DomainData\\OrderDto<\/a>"],[94.11764705882352,5,"<a href=\"DomainData\/ReservationDto.php.html#5\">App\\DomainData\\ReservationDto<\/a>"],[63.63636363636363,5,"<a href=\"DomainData\/TableDto.php.html#5\">App\\DomainData\\TableDto<\/a>"],[69.23076923076923,5,"<a href=\"DomainData\/UserDto.php.html#5\">App\\DomainData\\UserDto<\/a>"],[0,5,"<a href=\"DomainData\/WaitingListDto.php.html#5\">App\\DomainData\\WaitingListDto<\/a>"],[0,5,"<a href=\"Traits\/GenerateRandomString.php.html#12\">App\\Traits\\GenerateRandomString<\/a>"],[0,4,"<a href=\"Traits\/Notifications.php.html#17\">App\\Traits\\Notifications<\/a>"],[0,9,"<a href=\"Traits\/SendApis.php.html#12\">App\\Traits\\SendApis<\/a>"],[0,5,"<a href=\"Traits\/UploadFile.php.html#10\">App\\Traits\\UploadFile<\/a>"],[22.22222222222222,9,"<a href=\"Traits\/Validators.php.html#5\">App\\Traits\\Validators<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Http\/Controllers\/ChargeTypeController.php.html#16\">App\\Http\\Controllers\\ChargeTypeController::__construct<\/a>"],[81.81818181818183,3,"<a href=\"Http\/Controllers\/ChargeTypeController.php.html#20\">App\\Http\\Controllers\\ChargeTypeController::getChargeTypes<\/a>"],[100,2,"<a href=\"Http\/Controllers\/ChargeTypeController.php.html#45\">App\\Http\\Controllers\\ChargeTypeController::createChargeType<\/a>"],[75,2,"<a href=\"Http\/Controllers\/ChargeTypeController.php.html#65\">App\\Http\\Controllers\\ChargeTypeController::updateChargeType<\/a>"],[77.77777777777779,2,"<a href=\"Http\/Controllers\/ChargeTypeController.php.html#86\">App\\Http\\Controllers\\ChargeTypeController::deleteChargeTypes<\/a>"],[83.33333333333334,4,"<a href=\"Http\/Controllers\/ChargeTypeController.php.html#107\">App\\Http\\Controllers\\ChargeTypeController::getChargeTypeById<\/a>"],[59.45945945945946,10,"<a href=\"Http\/Controllers\/Controller.php.html#14\">App\\Http\\Controllers\\Controller::InternalDispatcher<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CustomerController.php.html#15\">App\\Http\\Controllers\\CustomerController::__construct<\/a>"],[0,3,"<a href=\"Http\/Controllers\/CustomerController.php.html#19\">App\\Http\\Controllers\\CustomerController::getCustomers<\/a>"],[0,2,"<a href=\"Http\/Controllers\/CustomerController.php.html#46\">App\\Http\\Controllers\\CustomerController::createCustomer<\/a>"],[0,2,"<a href=\"Http\/Controllers\/CustomerController.php.html#66\">App\\Http\\Controllers\\CustomerController::updateCustomer<\/a>"],[0,2,"<a href=\"Http\/Controllers\/CustomerController.php.html#87\">App\\Http\\Controllers\\CustomerController::deleteCustomers<\/a>"],[0,4,"<a href=\"Http\/Controllers\/CustomerController.php.html#108\">App\\Http\\Controllers\\CustomerController::getCustomerById<\/a>"],[100,1,"<a href=\"Http\/Controllers\/MealController.php.html#15\">App\\Http\\Controllers\\MealController::__construct<\/a>"],[81.81818181818183,3,"<a href=\"Http\/Controllers\/MealController.php.html#19\">App\\Http\\Controllers\\MealController::getMeals<\/a>"],[100,2,"<a href=\"Http\/Controllers\/MealController.php.html#44\">App\\Http\\Controllers\\MealController::createMeal<\/a>"],[75,2,"<a href=\"Http\/Controllers\/MealController.php.html#64\">App\\Http\\Controllers\\MealController::updateMeal<\/a>"],[77.77777777777779,2,"<a href=\"Http\/Controllers\/MealController.php.html#85\">App\\Http\\Controllers\\MealController::deleteMeals<\/a>"],[83.33333333333334,4,"<a href=\"Http\/Controllers\/MealController.php.html#106\">App\\Http\\Controllers\\MealController::getMealById<\/a>"],[100,1,"<a href=\"Http\/Controllers\/OrderController.php.html#17\">App\\Http\\Controllers\\OrderController::__construct<\/a>"],[0,3,"<a href=\"Http\/Controllers\/OrderController.php.html#21\">App\\Http\\Controllers\\OrderController::getOrders<\/a>"],[100,2,"<a href=\"Http\/Controllers\/OrderController.php.html#48\">App\\Http\\Controllers\\OrderController::createOrder<\/a>"],[77.77777777777779,2,"<a href=\"Http\/Controllers\/OrderController.php.html#71\">App\\Http\\Controllers\\OrderController::updateOrderStatus<\/a>"],[0,2,"<a href=\"Http\/Controllers\/OrderController.php.html#92\">App\\Http\\Controllers\\OrderController::removeItemsFromOrder<\/a>"],[0,2,"<a href=\"Http\/Controllers\/OrderController.php.html#111\">App\\Http\\Controllers\\OrderController::addMealsToOrder<\/a>"],[0,2,"<a href=\"Http\/Controllers\/OrderController.php.html#134\">App\\Http\\Controllers\\OrderController::deleteOrders<\/a>"],[0,4,"<a href=\"Http\/Controllers\/OrderController.php.html#155\">App\\Http\\Controllers\\OrderController::getOrderById<\/a>"],[0,1,"<a href=\"Http\/Controllers\/OrderDetailController.php.html#12\">App\\Http\\Controllers\\OrderDetailController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ReservationController.php.html#16\">App\\Http\\Controllers\\ReservationController::__construct<\/a>"],[81.81818181818183,3,"<a href=\"Http\/Controllers\/ReservationController.php.html#20\">App\\Http\\Controllers\\ReservationController::getReservations<\/a>"],[100,2,"<a href=\"Http\/Controllers\/ReservationController.php.html#45\">App\\Http\\Controllers\\ReservationController::createReservation<\/a>"],[71.42857142857143,2,"<a href=\"Http\/Controllers\/ReservationController.php.html#61\">App\\Http\\Controllers\\ReservationController::checkInReservation<\/a>"],[71.42857142857143,2,"<a href=\"Http\/Controllers\/ReservationController.php.html#78\">App\\Http\\Controllers\\ReservationController::checkOutReservation<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ReservationController.php.html#101\">App\\Http\\Controllers\\ReservationController::deleteReservations<\/a>"],[85.71428571428571,4,"<a href=\"Http\/Controllers\/ReservationController.php.html#122\">App\\Http\\Controllers\\ReservationController::getReservationById<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TableController.php.html#19\">App\\Http\\Controllers\\TableController::__construct<\/a>"],[0,3,"<a href=\"Http\/Controllers\/TableController.php.html#23\">App\\Http\\Controllers\\TableController::getTablesAvailableForReservation<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UserController.php.html#14\">App\\Http\\Controllers\\UserController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/UserController.php.html#18\">App\\Http\\Controllers\\UserController::login<\/a>"],[0,1,"<a href=\"Http\/Controllers\/WaitingListController.php.html#15\">App\\Http\\Controllers\\WaitingListController::__construct<\/a>"],[0,3,"<a href=\"Http\/Controllers\/WaitingListController.php.html#19\">App\\Http\\Controllers\\WaitingListController::getWaitingLists<\/a>"],[0,2,"<a href=\"Http\/Controllers\/WaitingListController.php.html#46\">App\\Http\\Controllers\\WaitingListController::createWaitingList<\/a>"],[0,2,"<a href=\"Http\/Controllers\/WaitingListController.php.html#66\">App\\Http\\Controllers\\WaitingListController::updateWaitingList<\/a>"],[0,2,"<a href=\"Http\/Controllers\/WaitingListController.php.html#87\">App\\Http\\Controllers\\WaitingListController::deleteWaitingLists<\/a>"],[0,4,"<a href=\"Http\/Controllers\/WaitingListController.php.html#108\">App\\Http\\Controllers\\WaitingListController::getWaitingListById<\/a>"],[100,1,"<a href=\"Http\/Middleware\/AdminMiddleware.php.html#12\">App\\Http\\Middleware\\AdminMiddleware::__construct<\/a>"],[60,2,"<a href=\"Http\/Middleware\/AdminMiddleware.php.html#20\">App\\Http\\Middleware\\AdminMiddleware::handle<\/a>"],[100,1,"<a href=\"Http\/Middleware\/WaiterMiddleware.php.html#12\">App\\Http\\Middleware\\WaiterMiddleware::__construct<\/a>"],[60,2,"<a href=\"Http\/Middleware\/WaiterMiddleware.php.html#20\">App\\Http\\Middleware\\WaiterMiddleware::handle<\/a>"],[0,1,"<a href=\"Models\/ChargeType.php.html#16\">App\\Models\\ChargeType::orders<\/a>"],[0,1,"<a href=\"Models\/Customer.php.html#18\">App\\Models\\Customer::orders<\/a>"],[0,1,"<a href=\"Models\/Customer.php.html#23\">App\\Models\\Customer::reservations<\/a>"],[100,1,"<a href=\"Models\/Meal.php.html#18\">App\\Models\\Meal::orderDetails<\/a>"],[100,1,"<a href=\"Models\/Order.php.html#21\">App\\Models\\Order::customer<\/a>"],[100,1,"<a href=\"Models\/Order.php.html#26\">App\\Models\\Order::table<\/a>"],[100,1,"<a href=\"Models\/Order.php.html#32\">App\\Models\\Order::reservation<\/a>"],[100,1,"<a href=\"Models\/Order.php.html#37\">App\\Models\\Order::user<\/a>"],[0,1,"<a href=\"Models\/Order.php.html#42\">App\\Models\\Order::chargeType<\/a>"],[100,1,"<a href=\"Models\/Order.php.html#47\">App\\Models\\Order::orderDetails<\/a>"],[0,1,"<a href=\"Models\/OrderDetail.php.html#20\">App\\Models\\OrderDetail::order<\/a>"],[0,1,"<a href=\"Models\/OrderDetail.php.html#25\">App\\Models\\OrderDetail::meal<\/a>"],[0,1,"<a href=\"Models\/Reservation.php.html#22\">App\\Models\\Reservation::customer<\/a>"],[0,1,"<a href=\"Models\/Reservation.php.html#27\">App\\Models\\Reservation::table<\/a>"],[100,1,"<a href=\"Models\/Reservation.php.html#32\">App\\Models\\Reservation::orders<\/a>"],[0,1,"<a href=\"Models\/Table.php.html#16\">App\\Models\\Table::orders<\/a>"],[100,1,"<a href=\"Models\/Table.php.html#21\">App\\Models\\Table::reservations<\/a>"],[100,1,"<a href=\"Models\/User.php.html#44\">App\\Models\\User::casts<\/a>"],[100,1,"<a href=\"Models\/User.php.html#52\">App\\Models\\User::getJWTIdentifier<\/a>"],[100,1,"<a href=\"Models\/User.php.html#57\">App\\Models\\User::getJWTCustomClaims<\/a>"],[0,1,"<a href=\"Models\/User.php.html#63\">App\\Models\\User::orders<\/a>"],[0,1,"<a href=\"Models\/WaitingList.php.html#15\">App\\Models\\WaitingList::customer<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#12\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#20\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Repositories\/MealRepository.php.html#8\">App\\Repositories\\MealRepository::getMealWithServedMealsByDate<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#10\">App\\Repositories\\Repository::__construct<\/a>"],[100,2,"<a href=\"Repositories\/Repository.php.html#15\">App\\Repositories\\Repository::getRepository<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#27\">App\\Repositories\\Repository::getAll<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#32\">App\\Repositories\\Repository::getById<\/a>"],[0,1,"<a href=\"Repositories\/Repository.php.html#37\">App\\Repositories\\Repository::getByIdAndLock<\/a>"],[0,1,"<a href=\"Repositories\/Repository.php.html#42\">App\\Repositories\\Repository::getByKey<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#47\">App\\Repositories\\Repository::getByKeys<\/a>"],[0,2,"<a href=\"Repositories\/Repository.php.html#52\">App\\Repositories\\Repository::multipleSort<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#62\">App\\Repositories\\Repository::create<\/a>"],[0,2,"<a href=\"Repositories\/Repository.php.html#67\">App\\Repositories\\Repository::updateOrCreate<\/a>"],[0,1,"<a href=\"Repositories\/Repository.php.html#79\">App\\Repositories\\Repository::insertMany<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#84\">App\\Repositories\\Repository::update<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#91\">App\\Repositories\\Repository::updateByIds<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#96\">App\\Repositories\\Repository::delete<\/a>"],[0,1,"<a href=\"Repositories\/Repository.php.html#101\">App\\Repositories\\Repository::deleteWhereNotIn<\/a>"],[100,1,"<a href=\"Repositories\/Repository.php.html#106\">App\\Repositories\\Repository::loadRelatedObjects<\/a>"],[0,2,"<a href=\"Repositories\/Repository.php.html#111\">App\\Repositories\\Repository::forceDelete<\/a>"],[0,4,"<a href=\"Repositories\/Repository.php.html#121\">App\\Repositories\\Repository::syncWithUuid<\/a>"],[0,1,"<a href=\"Repositories\/Repository.php.html#139\">App\\Repositories\\Repository::sync<\/a>"],[100,1,"<a href=\"Repositories\/ReservationRepository.php.html#10\">App\\Repositories\\ReservationRepository::getReservationWithNotPaidOrders<\/a>"],[100,1,"<a href=\"Repositories\/TableRepository.php.html#8\">App\\Repositories\\TableRepository::getAvailableTableForReservation<\/a>"],[100,1,"<a href=\"Services\/ChargeTypeService.php.html#7\">App\\Services\\ChargeTypeService::__construct<\/a>"],[100,1,"<a href=\"Services\/CrudService.php.html#14\">App\\Services\\CrudService::__construct<\/a>"],[75,2,"<a href=\"Services\/CrudService.php.html#20\">App\\Services\\CrudService::create<\/a>"],[0,3,"<a href=\"Services\/CrudService.php.html#30\">App\\Services\\CrudService::createMany<\/a>"],[57.14285714285714,3,"<a href=\"Services\/CrudService.php.html#46\">App\\Services\\CrudService::update<\/a>"],[100,1,"<a href=\"Services\/CrudService.php.html#63\">App\\Services\\CrudService::delete<\/a>"],[60,2,"<a href=\"Services\/CrudService.php.html#70\">App\\Services\\CrudService::getById<\/a>"],[100,1,"<a href=\"Services\/CrudService.php.html#82\">App\\Services\\CrudService::getAll<\/a>"],[0,1,"<a href=\"Services\/CustomerService.php.html#7\">App\\Services\\CustomerService::__construct<\/a>"],[100,1,"<a href=\"Services\/MealService.php.html#7\">App\\Services\\MealService::__construct<\/a>"],[0,1,"<a href=\"Services\/OrderDetailService.php.html#7\">App\\Services\\OrderDetailService::__construct<\/a>"],[100,1,"<a href=\"Services\/OrderService.php.html#19\">App\\Services\\OrderService::__construct<\/a>"],[100,3,"<a href=\"Services\/OrderService.php.html#31\">App\\Services\\OrderService::create<\/a>"],[100,3,"<a href=\"Services\/OrderService.php.html#72\">App\\Services\\OrderService::updateOrderStatus<\/a>"],[33.33333333333333,3,"<a href=\"Services\/OrderService.php.html#105\">App\\Services\\OrderService::checkReservation<\/a>"],[33.33333333333333,2,"<a href=\"Services\/OrderService.php.html#117\">App\\Services\\OrderService::checkOrder<\/a>"],[0,2,"<a href=\"Services\/OrderService.php.html#125\">App\\Services\\OrderService::removeItemsFromOrder<\/a>"],[91.17647058823529,4,"<a href=\"Services\/OrderService.php.html#145\">App\\Services\\OrderService::addMealsToOrder<\/a>"],[100,3,"<a href=\"Services\/OrderService.php.html#196\">App\\Services\\OrderService::calculateOrderAndUpdate<\/a>"],[100,1,"<a href=\"Services\/ReservationService.php.html#13\">App\\Services\\ReservationService::__construct<\/a>"],[77.77777777777779,2,"<a href=\"Services\/ReservationService.php.html#22\">App\\Services\\ReservationService::create<\/a>"],[57.14285714285714,4,"<a href=\"Services\/ReservationService.php.html#38\">App\\Services\\ReservationService::checkInReservation<\/a>"],[57.14285714285714,4,"<a href=\"Services\/ReservationService.php.html#62\">App\\Services\\ReservationService::checkOutReservation<\/a>"],[0,1,"<a href=\"Services\/TableService.php.html#9\">App\\Services\\TableService::__construct<\/a>"],[0,1,"<a href=\"Services\/TableService.php.html#14\">App\\Services\\TableService::getTablesAvailableForReservation<\/a>"],[0,1,"<a href=\"Services\/UserService.php.html#10\">App\\Services\\UserService::__construct<\/a>"],[0,3,"<a href=\"Services\/UserService.php.html#15\">App\\Services\\UserService::login<\/a>"],[0,1,"<a href=\"Services\/WaitingListService.php.html#7\">App\\Services\\WaitingListService::__construct<\/a>"],[75,2,"<a href=\"DomainData\/ChargeTypeDto.php.html#7\">App\\DomainData\\ChargeTypeDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/ChargeTypeDto.php.html#17\">App\\DomainData\\ChargeTypeDto::initializeChargeTypeDto<\/a>"],[0,2,"<a href=\"DomainData\/CustomerDto.php.html#7\">App\\DomainData\\CustomerDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/CustomerDto.php.html#17\">App\\DomainData\\CustomerDto::initializeCustomerDto<\/a>"],[75,2,"<a href=\"DomainData\/MealDto.php.html#7\">App\\DomainData\\MealDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/MealDto.php.html#17\">App\\DomainData\\MealDto::initializeMealDto<\/a>"],[0,2,"<a href=\"DomainData\/OrderDetailDto.php.html#7\">App\\DomainData\\OrderDetailDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/OrderDetailDto.php.html#17\">App\\DomainData\\OrderDetailDto::initializeOrderDetailDto<\/a>"],[75,2,"<a href=\"DomainData\/OrderDto.php.html#7\">App\\DomainData\\OrderDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/OrderDto.php.html#17\">App\\DomainData\\OrderDto::initializeOrderDto<\/a>"],[75,2,"<a href=\"DomainData\/ReservationDto.php.html#7\">App\\DomainData\\ReservationDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/ReservationDto.php.html#17\">App\\DomainData\\ReservationDto::initializeReservationDto<\/a>"],[0,2,"<a href=\"DomainData\/TableDto.php.html#7\">App\\DomainData\\TableDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/TableDto.php.html#17\">App\\DomainData\\TableDto::initializeTableDto<\/a>"],[0,2,"<a href=\"DomainData\/UserDto.php.html#7\">App\\DomainData\\UserDto::getRules<\/a>"],[100,3,"<a href=\"DomainData\/UserDto.php.html#17\">App\\DomainData\\UserDto::initializeUserDto<\/a>"],[0,2,"<a href=\"DomainData\/WaitingListDto.php.html#7\">App\\DomainData\\WaitingListDto::getRules<\/a>"],[0,3,"<a href=\"DomainData\/WaitingListDto.php.html#17\">App\\DomainData\\WaitingListDto::initializeWaitingListDto<\/a>"],[0,2,"<a href=\"Traits\/GenerateRandomString.php.html#14\">App\\Traits\\GenerateRandomString::generateRandomString<\/a>"],[0,2,"<a href=\"Traits\/GenerateRandomString.php.html#24\">App\\Traits\\GenerateRandomString::generateRandomDigits<\/a>"],[0,1,"<a href=\"Traits\/GenerateRandomString.php.html#34\">App\\Traits\\GenerateRandomString::generateRandomDate<\/a>"],[0,1,"<a href=\"Traits\/Notifications.php.html#19\">App\\Traits\\Notifications::notify<\/a>"],[0,2,"<a href=\"Traits\/Notifications.php.html#48\">App\\Traits\\Notifications::notifyFireBase<\/a>"],[0,1,"<a href=\"Traits\/Notifications.php.html#74\">App\\Traits\\Notifications::pushChanel<\/a>"],[0,1,"<a href=\"Traits\/SendApis.php.html#14\">App\\Traits\\SendApis::getGuzzleRequest<\/a>"],[0,4,"<a href=\"Traits\/SendApis.php.html#24\">App\\Traits\\SendApis::postOutRequest<\/a>"],[0,3,"<a href=\"Traits\/SendApis.php.html#41\">App\\Traits\\SendApis::putGuzzleRequest<\/a>"],[0,1,"<a href=\"Traits\/SendApis.php.html#57\">App\\Traits\\SendApis::deleteGuzzleRequest<\/a>"],[0,1,"<a href=\"Traits\/UploadFile.php.html#13\">App\\Traits\\UploadFile::uploadFile<\/a>"],[0,1,"<a href=\"Traits\/UploadFile.php.html#27\">App\\Traits\\UploadFile::deleteFile<\/a>"],[0,1,"<a href=\"Traits\/UploadFile.php.html#32\">App\\Traits\\UploadFile::uploadBase64File<\/a>"],[0,1,"<a href=\"Traits\/UploadFile.php.html#49\">App\\Traits\\UploadFile::convertFileToBase64<\/a>"],[0,1,"<a href=\"Traits\/UploadFile.php.html#56\">App\\Traits\\UploadFile::createBase64File<\/a>"],[100,2,"<a href=\"Traits\/Validators.php.html#8\">App\\Traits\\Validators::failMessages<\/a>"],[0,3,"<a href=\"Traits\/Validators.php.html#20\">App\\Traits\\Validators::arrayValidator<\/a>"],[0,4,"<a href=\"Traits\/Validators.php.html#32\">App\\Traits\\Validators::objectValidator<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
