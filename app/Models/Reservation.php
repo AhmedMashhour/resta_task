@@ -5,10 +5,11 @@ namespace App\Models;
 use App\DomainData\ReservationDto;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Reservation extends Model
 {
-    use HasFactory, ReservationDto;
+    use HasFactory, ReservationDto,SoftDeletes;
 
     public const RESERVATION_STATUS_UPCOMING = 'upcoming';
     public const RESERVATION_STATUS_CANCELED = 'canceled';

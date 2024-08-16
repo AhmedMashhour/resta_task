@@ -5,10 +5,11 @@ namespace App\Models;
 use App\DomainData\TableDto;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Table extends Model
 {
-    use HasFactory,TableDto;
+    use HasFactory,SoftDeletes,TableDto;
 
     protected $fillable = [];
 

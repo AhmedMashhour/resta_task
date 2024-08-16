@@ -62,6 +62,7 @@ class OrderController extends Controller
         $request = $validator->validate();
 
         $this->orderService->create($request, $output);
+
     }
 
     /**

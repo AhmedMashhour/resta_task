@@ -7,6 +7,7 @@ use App\Models\OrderDetail;
 use App\Repositories\Repository;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class OrderService extends CrudService
 {
@@ -43,8 +44,8 @@ class OrderService extends CrudService
         $vat = 0;
         if (isset($request['charge_type_id'])) {
             $chargeType = $this->chargeTypeRepository->getById($request['charge_type_id']);
-            $service = $chargeType->service_percentage;
-            $vat = $chargeType->vat_percentage;
+            $service = $chargeType->service;
+            $vat = $chargeType->vat;
         }
 
         $order = $this->repository->create([
@@ -91,7 +92,9 @@ class OrderService extends CrudService
         ]);
 
         $this->calculateOrderAndUpdate($order, $output);
-        $request['status'] === Order::ORDER_STATUS_PAID ? $paid = $order->total : $paid = 0;
+
+        $request['status'] == Order::ORDER_STATUS_PAID ? $paid = $order->total : $paid = 0;
+
         $this->repository->update($order, [
             'status' => $request['status'],
             'paid' => $paid,
@@ -152,10 +155,10 @@ class OrderService extends CrudService
         if (isset($output->Error)) return;
 
         foreach ($request['meals'] as $mealData) {
-            $meal = $this->mealRepository->getMealWithServedMealsByDate($mealData['meal_id'],today()->toDateString())->first();
+            $meal = $this->mealRepository->getMealWithServedMealsByDate($mealData['meal_id'], today()->toDateString())->first();
 
-            if (($meal->order_details_count + $mealData['quantity']) >= $meal->available_quantity){
-                $available = $meal->available_quantity -$meal->order_details_count ;
+            if (($meal->order_details_count + $mealData['quantity']) >= $meal->available_quantity) {
+                $available = $meal->available_quantity - $meal->order_details_count;
                 $output->Error = ["meal $meal->description is already served by $meal->order_details_count, you can only order $available "];
                 return;
             }
@@ -197,16 +200,16 @@ class OrderService extends CrudService
         $total_service = 0;
 
         foreach ($order->orderDetails as $order_detail) {
-            if ($order_detail->status == OrderDetail::ORDER_DETAIL_STATUS_PENDING) {
+            if (in_array($order_detail->status, [OrderDetail::ORDER_DETAIL_STATUS_PENDING, OrderDetail::ORDER_DETAIL_STATUS_PAID])) {
                 $total += $order_detail->amount_to_pay;
                 $total_vat += $order_detail->vat_amount;
                 $total_service += $order_detail->service_amount;
             }
         }
         $output->order = $this->repository->update($order, [
-            'total' => $total,
-            'total_vat' => $total_vat,
-            'total_service' => $total_service,
+            'total' => round($total, 2),
+            'total_vat' => round($total_vat, 2),
+            'total_service' => round($total_service, 2),
         ]);
 
     }

@@ -5,10 +5,11 @@ namespace App\Models;
 use App\DomainData\CustomerDto;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Customer extends Model
 {
-    use HasFactory,CustomerDto;
+    use HasFactory,CustomerDto,SoftDeletes;
 
     protected $fillable=[
 

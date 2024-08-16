@@ -5,10 +5,11 @@ namespace App\Models;
 use App\DomainData\OrderDetailDto;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class OrderDetail extends Model
 {
-    use HasFactory,OrderDetailDto;
+    use HasFactory,OrderDetailDto,SoftDeletes;
 
     public const ORDER_DETAIL_STATUS_PENDING = 'pending';
     public const ORDER_DETAIL_STATUS_WASTE = 'waste';

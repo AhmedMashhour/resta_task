@@ -113,7 +113,8 @@ class MealControllerTest extends TestCase
             'ids' => $meal_ids,
         ])->assertStatus(ResponseAlias::HTTP_OK);
 
-        $this->assertDatabaseCount('meals', 0);
+        foreach ($meal_ids as $meal_id)
+            $this->assertSoftDeleted('meals', ['id' => $meal_id]);
 
     }
 

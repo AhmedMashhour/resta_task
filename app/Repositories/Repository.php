@@ -85,7 +85,7 @@ class Repository
     {
         $modelObj->update($data);
 
-        return $modelObj;
+        return $modelObj->fresh();
     }
 
     public function updateByIds(array $ids, string $key, array $data): bool
